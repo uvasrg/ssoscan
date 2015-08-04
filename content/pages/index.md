@@ -39,7 +39,7 @@ vulnerability.
 
 Yuchen Zhou and David Evans. _SSOScan: Automated Testing of Web Applications for Single Sign-On Vulnerabilities_ in [_23<sup>rd</sup> USENIX Security Symposium_](https://www.usenix.org/conference/usenixsecurity14), San Diego, 20-22 August 2014.
 
-Full paper (16 pages): [[PDF](|filename|../docs/ssoscan.pdf)]
+Full paper (16 pages): [[PDF](|filename|../docs/SSOScan.pdf)]
 Expanded tech report (18 pages): [[PDF](|filename|../docs/SSOScan_TR.pdf)]
 
 ### Source Code
