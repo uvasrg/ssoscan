@@ -1,0 +1,21 @@
+baseurl = "http://ssoscan.org"
+languageCode = "en-us"
+title = "SSOScan"
+subtitle = "Automatically Scanning for SSO Vulnerabilities"
+
+[params]
+    sidebartitle = "SSOScan"
+    sidebartagline = "Automatically Scanning for SSO Vulnerabilities"
+    nodate = true
+    noauthor = true
+    noread = true
+    nopaging=true
+    notoc=true
+
+[[menu.main]]
+    name = "Blog"
+    url = "/posts"
+
+[[menu.footer]]
+    name = "Blog"
+    url = "/posts"
