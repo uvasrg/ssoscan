@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSOScan</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on SSOScan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SSOScan</title>
+      <link>http://localhost:1313/main/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/main/</guid>
+      <description>
+
+&lt;h2 id=&#34;automatic-scanning-for-sso-vulnerabilities:379caad01b6ea305187be199bcac1370&#34;&gt;Automatic Scanning for SSO Vulnerabilities&lt;/h2&gt;
+
+&lt;p&gt;SSOScan is a tool that can automatically check if your application has
+&lt;a href=&#34;http://localhost:1313/vulnerabilities/&#34;&gt;these vulnerabilities&lt;/a&gt; when integrating
+Facebook Single Sign-On (SSO).&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34;
+        src=&#34;//www.youtube-nocookie.com/embed/biO-nzyItZw&#34;
+        frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Correctly integrating third-party services into web applications is
+challenging, and mistakes can have grave consequences when third-party
+services are used for security-critical tasks such as authentication and
+authorization. Developers often misunderstand integration requirements
+and make critical mistakes when integrating services such as single
+sign-on APIs. Since traditional programming techniques are hard to apply
+to programs running inside black-box web servers, we propose to detect
+vulnerabilities by probing behaviors of the system. This paper describes
+the design and implementation of SSOScan, an automatic vulnerability
+checker for applications using Facebook Single Sign-On (SSO) APIs. We
+used SSOScan to study the twenty thousand top-ranked websites for five
+SSO vulnerabilities. Of the 1660 sites in our study that employ Facebook
+SSO, over 20% were found to suffer from at least one serious
+vulnerability.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;a href=&#34;http://localhost:1313/images/systemStructure.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/systemStructure-small.png&#34; width=500 height=264 alt=&#34;System Strcture&#34;&gt;&lt;/a&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;vulnerabilities:379caad01b6ea305187be199bcac1370&#34;&gt;Vulnerabilities&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/vulnerabilities/&#34;&gt;Vulnerabilities Checked by SSOScan&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;paper:379caad01b6ea305187be199bcac1370&#34;&gt;Paper&lt;/h3&gt;
+
+&lt;p&gt;Yuchen Zhou and David Evans. &lt;em&gt;SSOScan: Automated Testing of Web Applications for Single Sign-On Vulnerabilities&lt;/em&gt; in &lt;a href=&#34;https://www.usenix.org/conference/usenixsecurity14&#34;&gt;&lt;em&gt;23&lt;sup&gt;rd&lt;/sup&gt; USENIX Security Symposium&lt;/em&gt;&lt;/a&gt;, San Diego, 20-22 August 2014.&lt;/p&gt;
+
+&lt;p&gt;Full paper (16 pages): [&lt;a href=&#34;http://localhost:1313/docs/SSOScan.pdf&#34;&gt;PDF&lt;/a&gt;]
+&lt;br /&gt;
+Expanded tech report (18 pages): [&lt;a href=&#34;http://localhost:1313/docs/SSOScan_TR.pdf&#34;&gt;PDF&lt;/a&gt;]
+&lt;/p&gt;
+
+&lt;h3 id=&#34;source-code:379caad01b6ea305187be199bcac1370&#34;&gt;Source Code&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.github.com/Treeeater/vulCheckerFirefox&#34;&gt;http://www.github.com/Treeeater/vulCheckerFirefox&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;authors:379caad01b6ea305187be199bcac1370&#34;&gt;Authors&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.yuchenzhou.info/&#34;&gt;Yuchen Zhou&lt;/a&gt; (University of Virginia; now at Palo Alto Networks)&lt;br /&gt;
+&lt;a href=&#34;http://www.cs.virginia.edu/evans&#34;&gt;David Evans&lt;/a&gt; (University of Virginia)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vulnerabilities</title>
+      <link>http://localhost:1313/vulnerabilities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vulnerabilities/</guid>
+      <description>
+
+&lt;p&gt;SSOScan currently looks for these five types of vulnerabilities.&lt;/p&gt;
+
+&lt;h3 id=&#34;1-access-token-misuse:3119e9da9c342f2d54aa5d0f7f4d3ad9&#34;&gt;1. Access token misuse&lt;/h3&gt;
+
+&lt;p&gt;When a website uses an &lt;em&gt;access_token&lt;/em&gt; from Facebook to authenticate
+users, impersonation attacks can happen.  This implementation is
+dangerous because the &lt;em&gt;access_token&lt;/em&gt; is not tied to a user&amp;rsquo;s
+identity or your application ID, but only to user&amp;rsquo;s permissions.  This
+means a malicious application which holds a victim&amp;rsquo;s
+&lt;em&gt;access_token&lt;/em&gt; (because the victim has been tricked into
+using the malicious application) could simply reuse that token to login
+to the vulnerable website as that victim.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mitigation.&lt;/strong&gt; To mitigate this vulnerability, we suggest websites to
+use either code or signed_request provided by Facebook when
+authenticating users.  If an &lt;em&gt;access_token&lt;/em&gt; has to be used, be
+sure to verify its intended audience explained in the Facebook developer guide: &lt;a
+href=&#34;https://developers.facebook.com/docs/facebook-login/access-tokens/#debug&#34;&gt;
+&lt;em&gt;&lt;a href=&#34;https://developers.facebook.com/docs/facebook-login/access-tokens/#debug&#34;&gt;https://developers.facebook.com/docs/facebook-login/access-tokens/#debug&lt;/a&gt;&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;2-signed-request-misuse:3119e9da9c342f2d54aa5d0f7f4d3ad9&#34;&gt;2. Signed_request misuse&lt;/h3&gt;
+
+&lt;p&gt;When a website uses &lt;em&gt;signed_request&lt;/em&gt; from Facebook to
+authenticate users, impersonation attacks can still happen if the
+developer doesn&amp;rsquo;t check its signature and signed content with care.  An
+attacker can simply forge a &lt;em&gt;signed_request&lt;/em&gt; with an
+incorrect signature, or modify the content of a
+&lt;em&gt;signed_request&lt;/em&gt; intended for another application.  When the
+attacker supplies the fake credential to a vulnerable website, it will
+still authenticate the attacker as the victim.  If
+&lt;em&gt;access_token&lt;/em&gt; is used along with
+&lt;em&gt;signed_request&lt;/em&gt;, it is also important to check that the
+identities of both credentials agree with each other.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mitigation.&lt;/strong&gt; To mitigate this vulnerability, we suggest websites to
+  parse the signed&lt;em&gt;request and check its signature using application
+  secret correctly.  Visit &lt;a
+  href=&#34;https://developers.facebook.com/docs/facebook-login/using-login-with-games/&#34;&gt;
+_&lt;a href=&#34;https://developers.facebook.com/docs/facebook-login/using-login-with-games/&#34;&gt;https://developers.facebook.com/docs/facebook-login/using-login-with-games/&lt;/a&gt;&lt;/em&gt;&lt;/a&gt;
+  for more details.&lt;/p&gt;
+
+&lt;h3 id=&#34;3-credential-leakage-via-referrer-header:3119e9da9c342f2d54aa5d0f7f4d3ad9&#34;&gt;3. Credential leakage via referrer header&lt;/h3&gt;
+
+&lt;p&gt;Referrer header is auto-appended to requests initiated from any webpage
+to other parties.  If a website includes OAuth credentials (such as
+&lt;em&gt;access_token&lt;/em&gt;, etc.) in their URLs, they should make sure
+the page content does not include any untrusted resources.  For example,
+if a website includes a picture from an untrusted source &amp;lsquo;evil.com&amp;rsquo;,
+that maliciouis site will be able to get all OAuth credentials of users
+logging in to your site.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mitigation.&lt;/strong&gt; To mitigate this vulnerability, we suggest a website
+consume user&amp;rsquo;s OAuth credentials at server side and do not return such
+information back to the client side.  Such credentials can be stored in
+web server&amp;rsquo;s back end DB and can be linked to the user by setting a
+cookie in user&amp;rsquo;s browser.&lt;/p&gt;
+
+&lt;h3 id=&#34;4-client-secret-leakage:3119e9da9c342f2d54aa5d0f7f4d3ad9&#34;&gt;4. Client secret leakage&lt;/h3&gt;
+
+&lt;p&gt;Including &lt;em&gt;client_secret&lt;/em&gt; on client side is dangerous, it enables
+any user to impersonate the application.  It can be used to forge
+&lt;em&gt;signed_request&lt;/em&gt; to log in as anybody to your application&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mitigation.&lt;/strong&gt; To mitigate this vulnerability, we suggest the web
+  application never include &lt;em&gt;client_secret&lt;/em&gt; on the client side.&lt;/p&gt;
+
+&lt;h3 id=&#34;5-credential-leakage-via-page-content:3119e9da9c342f2d54aa5d0f7f4d3ad9&#34;&gt;5. Credential leakage via page content&lt;/h3&gt;
+
+&lt;p&gt;Including Facebook&amp;rsquo;s SSO OAuth credentials (e.g. &lt;em&gt;access_token&lt;/em&gt;)
+in the landing page content (e.g. registration page) after the user has
+logged in can be dangerous because there might be other third-party
+scripts embedded on the webpage, and they have full access to the host
+information.  Once the OAuth credentials are exfiltrated, potential
+risks include leaking sensitive victim information and powerful
+permissions such as posting to victim&amp;rsquo;s timeline as the vulnerable
+application, and even impersonation attacks (reuse the OAuth credentials
+to login as the victim to the vulnerable website).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mitigation.&lt;/strong&gt; To mitigate this vulnerability, we suggest the web
+application never include OAuth credentials in the page content.  If for
+some reason client-side JavaScript needs access to them, we suggest this
+information be fetched from your app server using AJAX requests and
+stored as private variables (in a closure).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;This site was built using &lt;a href=&#34;http://pelican.notmyidea.org/&#34;&gt;Pelican&lt;i class=&#34;icon-external-link&#34;&gt;&lt;/i&gt;&lt;/a&gt;, a &lt;a href=&#34;http://python.org&#34;&gt;Python&lt;/a&gt; static site generator.  The theme is from &lt;a href=&#34;http://twitter.github.com/bootstrap/&#34;&gt;Bootstrap from Twitter &lt;i class=&#34;icon-external-link&#34;&gt;&lt;/i&gt;&lt;/a&gt;, and &lt;a href=&#34;http://fortawesome.github.com/Font-Awesome/&#34;&gt;Font-Awesome &lt;i class=&#34;icon-external-link&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
+      &lt;/footer&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
