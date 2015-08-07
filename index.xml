@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SSOScan</title>
-    <link>http://localhost:1313/</link>
+    <link>http://ssoscan.org/</link>
     <description>Recent content on SSOScan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://ssoscan.org/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>SSOScan</title>
-      <link>http://localhost:1313/main/</link>
+      <link>http://ssoscan.org/main/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/main/</guid>
+      <guid>http://ssoscan.org/main/</guid>
       <description>
 
 &lt;h2 id=&#34;automatic-scanning-for-sso-vulnerabilities:379caad01b6ea305187be199bcac1370&#34;&gt;Automatic Scanning for SSO Vulnerabilities&lt;/h2&gt;
 
 &lt;p&gt;SSOScan is a tool that can automatically check if your application has
-&lt;a href=&#34;http://localhost:1313/vulnerabilities/&#34;&gt;these vulnerabilities&lt;/a&gt; when integrating
+&lt;a href=&#34;http://ssoscan.org/vulnerabilities/&#34;&gt;these vulnerabilities&lt;/a&gt; when integrating
 Facebook Single Sign-On (SSO).&lt;/p&gt;
 
 &lt;p&gt;&lt;center&gt;
@@ -44,20 +44,20 @@ SSO, over 20% were found to suffer from at least one serious
 vulnerability.&lt;/p&gt;
 
 &lt;p&gt;&lt;center&gt;
-&lt;a href=&#34;http://localhost:1313/images/systemStructure.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/systemStructure-small.png&#34; width=500 height=264 alt=&#34;System Strcture&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;http://ssoscan.org/images/systemStructure.png&#34;&gt;&lt;img src=&#34;http://ssoscan.org/images/systemStructure-small.png&#34; width=500 height=264 alt=&#34;System Strcture&#34;&gt;&lt;/a&gt;
 &lt;/center&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;vulnerabilities:379caad01b6ea305187be199bcac1370&#34;&gt;Vulnerabilities&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/vulnerabilities/&#34;&gt;Vulnerabilities Checked by SSOScan&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://ssoscan.org/vulnerabilities/&#34;&gt;Vulnerabilities Checked by SSOScan&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;paper:379caad01b6ea305187be199bcac1370&#34;&gt;Paper&lt;/h3&gt;
 
 &lt;p&gt;Yuchen Zhou and David Evans. &lt;em&gt;SSOScan: Automated Testing of Web Applications for Single Sign-On Vulnerabilities&lt;/em&gt; in &lt;a href=&#34;https://www.usenix.org/conference/usenixsecurity14&#34;&gt;&lt;em&gt;23&lt;sup&gt;rd&lt;/sup&gt; USENIX Security Symposium&lt;/em&gt;&lt;/a&gt;, San Diego, 20-22 August 2014.&lt;/p&gt;
 
-&lt;p&gt;Full paper (16 pages): [&lt;a href=&#34;http://localhost:1313/docs/SSOScan.pdf&#34;&gt;PDF&lt;/a&gt;]
+&lt;p&gt;Full paper (16 pages): [&lt;a href=&#34;http://ssoscan.org/docs/SSOScan.pdf&#34;&gt;PDF&lt;/a&gt;]
 &lt;br /&gt;
-Expanded tech report (18 pages): [&lt;a href=&#34;http://localhost:1313/docs/SSOScan_TR.pdf&#34;&gt;PDF&lt;/a&gt;]
+Expanded tech report (18 pages): [&lt;a href=&#34;http://ssoscan.org/docs/SSOScan_TR.pdf&#34;&gt;PDF&lt;/a&gt;]
 &lt;/p&gt;
 
 &lt;h3 id=&#34;source-code:379caad01b6ea305187be199bcac1370&#34;&gt;Source Code&lt;/h3&gt;
@@ -73,10 +73,10 @@ Expanded tech report (18 pages): [&lt;a href=&#34;http://localhost:1313/docs/SSO
     
     <item>
       <title>Vulnerabilities</title>
-      <link>http://localhost:1313/vulnerabilities/</link>
+      <link>http://ssoscan.org/vulnerabilities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/vulnerabilities/</guid>
+      <guid>http://ssoscan.org/vulnerabilities/</guid>
       <description>
 
 &lt;p&gt;SSOScan currently looks for these five types of vulnerabilities.&lt;/p&gt;
@@ -167,10 +167,10 @@ stored as private variables (in a closure).&lt;/p&gt;
     
     <item>
       <title>about</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://ssoscan.org/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://ssoscan.org/about/</guid>
       <description>&lt;p&gt;This site was built using &lt;a href=&#34;http://pelican.notmyidea.org/&#34;&gt;Pelican&lt;i class=&#34;icon-external-link&#34;&gt;&lt;/i&gt;&lt;/a&gt;, a &lt;a href=&#34;http://python.org&#34;&gt;Python&lt;/a&gt; static site generator.  The theme is from &lt;a href=&#34;http://twitter.github.com/bootstrap/&#34;&gt;Bootstrap from Twitter &lt;i class=&#34;icon-external-link&#34;&gt;&lt;/i&gt;&lt;/a&gt;, and &lt;a href=&#34;http://fortawesome.github.com/Font-Awesome/&#34;&gt;Font-Awesome &lt;i class=&#34;icon-external-link&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;
       &lt;/footer&gt;&lt;/p&gt;
 </description>
