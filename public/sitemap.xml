@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://ssoscan.org/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/main/</loc>
+    <loc>http://ssoscan.org/main/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/vulnerabilities/</loc>
+    <loc>http://ssoscan.org/vulnerabilities/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://ssoscan.org/about/</loc>
   </url>
   
 </urlset>
