@@ -109,6 +109,7 @@ h2.brand-group {
 .sidebar, .sidebar p {
 	color: #8b8b8b;
 }
+
 .sidebar a {
   text-decoration: none;
   color: #fff;
@@ -116,6 +117,10 @@ h2.brand-group {
 .sidebar a:hover {
    text-decoration: underline;
    color:#E54028;
+}
+
+.brand-group a {
+   color: #FF8C00;
 }
 
 /* Nav */
