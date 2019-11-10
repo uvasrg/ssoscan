@@ -1,4 +1,4 @@
-baseurl = "http://ssoscan.org"
+baseurl = "//ssoscan.org"
 languageCode = "en-us"
 title = "SSOScan"
 subtitle = "Automatically Scanning for SSO Vulnerabilities"

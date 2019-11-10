@@ -46,10 +46,10 @@ Expanded tech report (18 pages): {{<pdflink "SSOScan_TR.pdf">}}
 
 ### Source Code
 
-[http://www.github.com/Treeeater/vulCheckerFirefox](http://www.github.com/Treeeater/vulCheckerFirefox)
+[https://www.github.com/Treeeater/vulCheckerFirefox](https://www.github.com/Treeeater/vulCheckerFirefox)
 
 ### Authors
 
-[Yuchen Zhou](http://www.yuchenzhou.info/) (University of Virginia; now at Palo Alto Networks)  
-[David Evans](http://www.cs.virginia.edu/evans) (University of Virginia)
+[Yuchen Zhou](https://www.yuchenzhou.info/) (University of Virginia; now at Palo Alto Networks)  
+[David Evans](https://www.cs.virginia.edu/evans) (University of Virginia)
 

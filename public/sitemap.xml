@@ -2,20 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://ssoscan.org/</loc>
-    <priority>0</priority>
+    <loc>//ssoscan.org/</loc>
   </url>
   
   <url>
-    <loc>http://ssoscan.org/main/</loc>
+    <loc>//ssoscan.org/main/</loc>
   </url>
   
   <url>
-    <loc>http://ssoscan.org/vulnerabilities/</loc>
+    <loc>//ssoscan.org/vulnerabilities/</loc>
   </url>
   
   <url>
-    <loc>http://ssoscan.org/about/</loc>
+    <loc>//ssoscan.org/about/</loc>
   </url>
   
 </urlset>
